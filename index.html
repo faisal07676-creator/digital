@@ -3,21 +3,22 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Elite Conversion Sales Pages | Premium Agency</title>
-  <meta name="description" content="We craft elite, data-driven sales pages that convert 2-5x better for ambitious brands ready to scale and dominate their market.">
+  <title>Elite High-Conversion Sales Pages | Premium Agency</title>
+  <meta name="description" content="We create ultra-premium, data-driven sales pages that convert 3-7x better for ambitious brands dominating their niche.">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     :root {
-      --bg-dark: #0d0d1a;
-      --bg-gradient: linear-gradient(135deg, #0d0d1a 0%, #161630 50%, #1f1f38 100%);
+      --bg-dark: #0a0a15;
+      --bg-gradient: linear-gradient(135deg, #0a0a15 0%, #12122e 50%, #1a1a40 100%);
       --text-primary: #ffffff;
-      --text-secondary: #b8b8d8;
-      --accent: #00e6d8;
-      --accent-soft: rgba(0, 230, 216, 0.12);
-      --glow: 0 0 40px rgba(0, 230, 216, 0.3);
-      --card-bg: rgba(25, 25, 45, 0.75);
-      --border: rgba(0, 230, 216, 0.2);
+      --text-secondary: #a0a0d0;
+      --accent: #00ffea;
+      --accent-glow: #00ffea;
+      --accent-soft: rgba(0, 255, 234, 0.15);
+      --glow: 0 0 60px rgba(0, 255, 234, 0.4);
+      --card-bg: rgba(20, 20, 40, 0.8);
+      --border: rgba(0, 255, 234, 0.25);
     }
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
@@ -27,65 +28,46 @@
       line-height: 1.7;
       overflow-x: hidden;
     }
-    .container { max-width: 1280px; margin: 0 auto; padding: 0 32px; }
-    .hero { padding: 160px 0 140px; text-align: center; }
-    .hero h1 { font-size: 4.8rem; font-weight: 900; line-height: 1.1; margin-bottom: 32px; letter-spacing: -1px; }
-    .hero p { font-size: 1.5rem; color: var(--text-secondary); max-width: 900px; margin: 0 auto 70px; }
-    .devices { display: flex; justify-content: center; align-items: center; gap: 80px; flex-wrap: wrap; margin-top: 60px; }
-    .device-img { max-width: 580px; border-radius: 32px; box-shadow: 0 60px 140px rgba(0,0,0,0.9); border: 1px solid var(--border); transition: transform 0.4s; }
-    .device-img:hover { transform: translateY(-10px); }
-    .section-title { text-align: center; font-size: 3.2rem; font-weight: 800; margin: 160px 0 90px; letter-spacing: -0.5px; }
-    .transformation { display: grid; grid-template-columns: repeat(auto-fit, minmax(480px, 1fr)); gap: 70px; margin-bottom: 160px; }
-    .trans-box { background: var(--card-bg); padding: 60px; border-radius: 32px; text-align: center; backdrop-filter: blur(16px); border: 1px solid var(--border); transition: all 0.4s; }
-    .trans-box.bad { border-color: rgba(255, 80, 80, 0.3); }
-    .trans-box.good { border-width: 3px; border-color: var(--accent); box-shadow: var(--glow); }
-    .trans-box:hover { transform: translateY(-10px); }
-    .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 60px; margin: 140px 0; }
-    .feature { text-align: center; padding: 50px 40px; background: var(--card-bg); border-radius: 28px; backdrop-filter: blur(14px); border: 1px solid var(--border); transition: all 0.4s; }
-    .feature:hover { box-shadow: var(--glow); transform: translateY(-8px); }
-    .feature-icon { font-size: 3.6rem; color: var(--accent); margin-bottom: 30px; }
-    .process { display: flex; justify-content: center; gap: 60px; flex-wrap: wrap; margin: 140px 0; }
-    .step { flex: 1; min-width: 320px; text-align: center; padding: 60px 40px; background: var(--card-bg); border-radius: 32px; backdrop-filter: blur(14px); border: 1px solid var(--border); transition: all 0.4s; }
-    .step:hover { box-shadow: var(--glow); }
-    .step-icon { width: 110px; height: 110px; background: var(--accent-soft); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 36px; font-size: 3rem; color: var(--accent); box-shadow: var(--glow); }
-    .pricing { display: flex; justify-content: center; gap: 60px; flex-wrap: wrap; margin: 160px 0; }
-    .price-card { background: var(--card-bg); padding: 70px 50px; border-radius: 36px; text-align: center; flex: 1; min-width: 360px; border: 1px solid var(--border); transition: all 0.5s; backdrop-filter: blur(16px); position: relative; }
-    .price-card:hover { transform: translateY(-20px); box-shadow: var(--glow); }
-    .price-card.pro { border: 3px solid var(--accent); box-shadow: var(--glow); background: linear-gradient(135deg, rgba(35,35,60,0.9), rgba(30,30,50,0.9)); }
-    .price-card .tag { background: var(--accent); color: #000; padding: 12px 40px; border-radius: 50px; font-weight: 700; margin-bottom: 40px; display: inline-block; }
-    .price { font-size: 4.8rem; font-weight: 800; color: var(--accent); margin: 40px 0 20px; }
-    .price-subtitle { font-size: 1.2rem; color: var(--text-secondary); margin-bottom: 40px; }
-    .features-list { list-style: none; margin: 40px 0; text-align: left; }
-    .features-list li { margin-bottom: 18px; font-size: 1.1rem; }
-    .features-list i { color: var(--accent); margin-right: 12px; }
-    .highlight-text { margin: 40px 0; font-size: 1.1rem; color: var(--text-secondary); }
-    .post-pricing-cta { text-align: center; padding: 120px 0 180px; background: rgba(0,0,0,0.2); }
-    .post-pricing-cta h2 { font-size: 3.8rem; margin-bottom: 32px; }
-    .post-pricing-cta p { font-size: 1.6rem; color: var(--text-secondary); margin-bottom: 70px; }
-    .cta-btn { padding: 26px 90px; font-size: 1.6rem; font-weight: 700; background: var(--accent); color: #000; border-radius: 70px; text-decoration: none; box-shadow: var(--glow); transition: all 0.5s; display: inline-block; }
-    .cta-btn:hover { transform: scale(1.08); box-shadow: 0 0 70px rgba(0,230,216,0.8); }
-    .testimonials { display: grid; grid-template-columns: repeat(auto-fit, minmax(460px, 1fr)); gap: 60px; margin: 160px 0; }
-    .testimonial { background: var(--card-bg); padding: 60px; border-radius: 32px; backdrop-filter: blur(14px); border-left: 6px solid var(--accent); box-shadow: var(--glow); }
-    .testimonial p { font-size: 1.3rem; margin-bottom: 30px; font-style: italic; }
-    .testimonial cite { font-size: 1.1rem; color: var(--accent); }
-    .faq { margin: 160px 0; max-width: 900px; margin-left: auto; margin-right: auto; }
-    .faq-item { background: var(--card-bg); padding: 40px; border-radius: 28px; margin-bottom: 30px; backdrop-filter: blur(12px); border: 1px solid var(--border); }
-    .faq-item h4 { font-size: 1.5rem; margin-bottom: 20px; color: var(--accent); }
-    .final-cta { text-align: center; padding: 180px 0; }
-    .final-cta h2 { font-size: 3.8rem; margin-bottom: 32px; }
-    .final-cta p { font-size: 1.6rem; color: var(--text-secondary); margin-bottom: 70px; }
-    @media (max-width: 992px) {
-      .hero h1 { font-size: 4rem; }
-      .section-title { font-size: 2.8rem; }
-      .devices { gap: 50px; }
-      .device-img { max-width: 500px; }
+    .container { max-width: 1400px; margin: 0 auto; padding: 0 40px; }
+    .hero { padding: 180px 0 160px; text-align: center; position: relative; }
+    .hero::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: radial-gradient(circle at 50% 50%, rgba(0,255,234,0.1) 0%, transparent 70%); }
+    .hero h1 { font-size: 5.5rem; font-weight: 900; line-height: 1.05; margin-bottom: 40px; letter-spacing: -2px; background: linear-gradient(90deg, #fff, var(--accent)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .hero p { font-size: 1.8rem; color: var(--text-secondary); max-width: 1000px; margin: 0 auto 80px; }
+    .devices { display: flex; justify-content: center; align-items: center; gap: 100px; flex-wrap: wrap; perspective: 2000px; }
+    .device-img { max-width: 650px; border-radius: 40px; box-shadow: var(--glow), 0 80px 160px rgba(0,0,0,0.95); border: 2px solid var(--border); transition: all 0.6s ease; }
+    .device-img:hover { transform: translateY(-20px) rotateY(5deg); box-shadow: var(--glow), 0 100px 200px rgba(0,255,234,0.2); }
+    .section-title { text-align: center; font-size: 3.8rem; font-weight: 800; margin: 180px 0 100px; letter-spacing: -1px; }
+    .transformation { display: grid; grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); gap: 80px; margin-bottom: 180px; }
+    .trans-box { background: var(--card-bg); padding: 70px; border-radius: 40px; text-align: center; backdrop-filter: blur(20px); border: 1px solid var(--border); transition: all 0.5s; }
+    .trans-box.bad { border-color: rgba(255, 50, 50, 0.4); }
+    .trans-box.good { border-width: 4px; border-color: var(--accent); box-shadow: var(--glow); }
+    .trans-box:hover { transform: translateY(-15px); box-shadow: var(--glow); }
+    .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)); gap: 70px; margin: 160px 0; }
+    .feature { text-align: center; padding: 60px 50px; background: var(--card-bg); border-radius: 36px; backdrop-filter: blur(18px); border: 1px solid var(--border); transition: all 0.5s; }
+    .feature:hover { box-shadow: var(--glow); transform: translateY(-12px); }
+    .feature-icon { font-size: 4.2rem; color: var(--accent); margin-bottom: 40px; text-shadow: var(--glow); }
+    .testimonials { display: grid; grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); gap: 80px; margin: 180px 0; }
+    .testimonial { background: var(--card-bg); padding: 70px; border-radius: 40px; backdrop-filter: blur(18px); border-left: 8px solid var(--accent); box-shadow: var(--glow); transition: all 0.4s; }
+    .testimonial:hover { transform: translateY(-10px); }
+    .testimonial p { font-size: 1.5rem; margin-bottom: 40px; font-style: italic; }
+    .testimonial cite { font-size: 1.3rem; color: var(--accent); font-weight: 600; }
+    .faq { margin: 180px 0; max-width: 1000px; margin-left: auto; margin-right: auto; }
+    .faq-item { background: var(--card-bg); padding: 50px; border-radius: 36px; margin-bottom: 40px; backdrop-filter: blur(16px); border: 1px solid var(--border); transition: all 0.4s; }
+    .faq-item:hover { box-shadow: var(--glow); transform: translateY(-8px); }
+    .faq-item h4 { font-size: 1.8rem; margin-bottom: 25px; color: var(--accent); }
+    .faq-item p { font-size: 1.2rem; color: var(--text-secondary); }
+    .cta-btn { padding: 30px 100px; font-size: 1.8rem; font-weight: 800; background: var(--accent); color: #000; border-radius: 80px; text-decoration: none; box-shadow: var(--glow); transition: all 0.6s; display: inline-block; }
+    .cta-btn:hover { transform: scale(1.1); box-shadow: 0 0 100px rgba(0,255,234,0.9); }
+    @media (max-width: 1024px) {
+      .hero h1 { font-size: 4.5rem; }
+      .devices { gap: 60px; }
+      .device-img { max-width: 550px; }
     }
     @media (max-width: 768px) {
-      .hero { padding: 120px 0 100px; }
-      .hero h1 { font-size: 3.2rem; }
-      .hero p { font-size: 1.3rem; }
-      .section-title { font-size: 2.6rem; margin: 120px 0 70px; }
-      .devices { gap: 40px; }
+      .hero { padding: 140px 0 120px; }
+      .hero h1 { font-size: 3.5rem; }
+      .hero p { font-size: 1.5rem; }
+      .section-title { font-size: 3rem; }
       .device-img { max-width: 100%; }
     }
   </style>
@@ -93,154 +75,92 @@
 <body>
   <section class="hero">
     <div class="container">
-      <h1>Stop Leaking Revenue<br>From Your Paid Traffic</h1>
-      <p>We build elite, high-conversion sales pages using proven frameworks that deliver 2-5x better results — exclusively for ambitious brands serious about scaling.</p>
+      <h1>Unlock Explosive Growth<br>With Elite Sales Pages</h1>
+      <p>We engineer premium, high-conversion funnels that turn paid traffic into predictable revenue — for elite brands ready to dominate.</p>
       <div class="devices">
-        <img src="https://cdn.prod.website-files.com/5e593fb060cf877cf875dd1f/67b770c9c93fa8606a35fadd_dark-mode-design-agency-webflow-template.png" alt="Premium Dark Mode Sales Page Mockup on Desktop" class="device-img" loading="lazy">
-        <img src="https://images.ui8.net/uploads/frame-2147225442_1747074724443.png" alt="High-Converting Agency Landing Page Mockup" class="device-img" loading="lazy">
+        <img src="https://s3-alpha.figma.com/hub/file/6869189957/b7163e3e-526f-4d31-89fa-558a72928882-cover.png" alt="Modern Dark Mode SaaS Sales Page Mockup" class="device-img" loading="lazy">
+        <img src="https://saaslandingpage.com/wp-content/uploads/2023/08/6-webon-dark-landing-page-template@2x.png" alt="Futuristic High-Converting Landing Page Mockup" class="device-img" loading="lazy">
+        <img src="https://cdn.prod.website-files.com/5e593fb060cf877cf875dd1f/67b770c9c93fa8606a35fadd_dark-mode-design-agency-webflow-template.png" alt="Premium Dark Agency Sales Page on Devices" class="device-img" loading="lazy">
       </div>
     </div>
   </section>
-  <h2 class="section-title container">Average Pages Lose Visitors — Elite Pages Convert Them Into Customers</h2>
+
+  <h2 class="section-title container">Why Most Pages Fail — And How Elite Ones Dominate</h2>
   <section class="transformation container">
     <div class="trans-box bad">
-      <h3>Typical Landing Page</h3>
-      <p>Generic design, unclear messaging, slow loading, no trust signals — resulting in high bounce rates and wasted ad spend.</p>
+      <h3>Average Landing Page</h3>
+      <p>Confusing layout, weak copy, slow speed, zero trust — bleeding ad spend and killing conversions.</p>
     </div>
     <div class="trans-box good">
-      <h3>Elite Conversion Sales Page</h3>
-      <p>Strategic copywriting, psychological triggers, lightning-fast performance, and proven frameworks — driving predictable revenue growth.</p>
+      <h3>Elite Conversion Machine</h3>
+      <p>Psychological mastery, lightning performance, irresistible offers — creating unstoppable revenue growth.</p>
     </div>
   </section>
-  <h2 class="section-title container">Engineered for Maximum Performance & Conversions</h2>
+
+  <h2 class="section-title container">Built for Unmatched Conversion Power</h2>
   <section class="features container">
     <div class="feature">
-      <div class="feature-icon"><i class="fas fa-tachometer-alt"></i></div>
-      <h3>Lightning-Fast Performance</h3>
-      <p>Optimized for perfect Core Web Vitals, ensuring top search rankings and instant user engagement.</p>
+      <div class="feature-icon"><i class="fas fa-rocket"></i></div>
+      <h3>Blazing-Fast Speed</h3>
+      <p>100/100 Core Web Vitals scores for instant loading and superior SEO dominance.</p>
     </div>
     <div class="feature">
       <div class="feature-icon"><i class="fas fa-mobile-alt"></i></div>
-      <h3>Seamless Responsive Design</h3>
-      <p>Pixel-perfect experience across desktop, tablet, and mobile — converting visitors on every device.</p>
+      <h3>Flawless Across Devices</h3>
+      <p>Stunning, responsive design that converts seamlessly on mobile, tablet, and desktop.</p>
     </div>
     <div class="feature">
-      <div class="feature-icon"><i class="fas fa-brain"></i></div>
-      <h3>Rooted in Conversion Psychology</h3>
-      <p>Every element backed by decades of research and real-world testing for maximum persuasion.</p>
-    </div>
-  </section>
-  <h2 class="section-title container">Our Battle-Tested Process</h2>
-  <section class="process container">
-    <div class="step">
-      <div class="step-icon"><i class="fas fa-search"></i></div>
-      <h3>1. In-Depth Research</h3>
-      <p>Analyze your offer, audience insights, and competitors to create a data-backed strategy.</p>
-    </div>
-    <div class="step">
-      <div class="step-icon"><i class="fas fa-gem"></i></div>
-      <h3>2. Premium Design & Copy</h3>
-      <p>Custom-built page with world-class visuals and high-impact persuasive copywriting.</p>
-    </div>
-    <div class="step">
-      <div class="step-icon"><i class="fas fa-chart-line"></i></div>
-      <h3>3. Launch & Optimize</h3>
-      <p>Deploy with tracking, test variations, and refine for ongoing performance gains.</p>
+      <div class="feature-icon"><i class="fas fa-lightbulb"></i></div>
+      <h3>Conversion Psychology Mastery</h3>
+      <p>Every element engineered with proven principles to maximize persuasion and sales.</p>
     </div>
   </section>
 
-  <h2 class="section-title container">Transparent Investment Packages</h2>
-  <section class="pricing container">
-    <div class="price-card">
-      <h3>🟦 Starter — $300</h3>
-      <p class="price-subtitle">Best for validation & early launches</p>
-      <ul class="features-list">
-        <li><i class="fas fa-check"></i> 1 High-Converting Sales Page</li>
-        <li><i class="fas fa-check"></i> Clean & professional layout</li>
-        <li><i class="fas fa-check"></i> Mobile-responsive design</li>
-        <li><i class="fas fa-check"></i> Clear call-to-action structure</li>
-        <li><i class="fas fa-check"></i> Fast loading performance</li>
-      </ul>
-      <p class="highlight-text">👉 Perfect if you want a solid page that looks professional and converts.</p>
-    </div>
-
-    <div class="price-card pro">
-      <div class="tag">Most Popular</div>
-      <h3>⭐ Pro — $500</h3>
-      <p class="price-subtitle">Built for serious growth</p>
-      <ul class="features-list">
-        <li><i class="fas fa-check"></i> Everything in Starter</li>
-        <li><i class="fas fa-check"></i> Conversion-focused UI/UX</li>
-        <li><i class="fas fa-check"></i> Proven sales copy structure</li>
-        <li><i class="fas fa-check"></i> Optimized section flow</li>
-        <li><i class="fas fa-check"></i> GitHub clean code delivery</li>
-        <li><i class="fas fa-check"></i> 1 round of revisions</li>
-      </ul>
-      <p class="highlight-text">👉 Ideal for digital products, SaaS & course creators.</p>
-    </div>
-
-    <div class="price-card">
-      <h3>👑 Premium — $1000</h3>
-      <p class="price-subtitle">For high-ticket & scalable offers</p>
-      <ul class="features-list">
-        <li><i class="fas fa-check"></i> Everything in Pro</li>
-        <li><i class="fas fa-check"></i> Advanced conversion strategy</li>
-        <li><i class="fas fa-check"></i> Custom sections & layout</li>
-        <li><i class="fas fa-check"></i> Multiple CTA placements</li>
-        <li><i class="fas fa-check"></i> Priority delivery</li>
-        <li><i class="fas fa-check"></i> Dedicated support</li>
-      </ul>
-      <p class="highlight-text">👉 Designed for brands that want maximum conversions.</p>
-    </div>
-  </section>
-
-  <section class="post-pricing-cta">
-    <div class="container">
-      <p style="font-size: 1.4rem; margin-bottom: 30px;"><strong>🔒 No Hidden Costs</strong></p>
-      <p style="font-size: 1.2rem; color: var(--text-secondary); margin-bottom: 50px;">
-        One-time payment<br>
-        100% custom design<br>
-        Built specifically for the US market
-      </p>
-      <h2>Ready to Build a Sales Page That Actually Converts?</h2>
-      <p>Let’s turn your traffic into revenue.</p>
-      <a href="https://calendly.com/swatirajput868443/30min" class="cta-btn">👉 Contact Now</a>
-    </div>
-  </section>
-
-  <h2 class="section-title container">Proven Results From Real Clients</h2>
+  <h2 class="section-title container">What Our Clients Say</h2>
   <section class="testimonials container">
     <div class="testimonial">
-      <p>"Our conversion rate jumped from 2.1% to 9.7% within weeks. This agency delivered beyond expectations."</p>
-      <cite>— Michael Torres, SaaS Founder & CEO</cite>
+      <p>“We went from 1.8% to 8.4% conversion rate in just 3 weeks after launch. The new page is absolutely crushing it!”</p>
+      <cite>— Alex Rivera, Founder @ TechFlow SaaS</cite>
     </div>
     <div class="testimonial">
-      <p>"Doubled our monthly revenue with a stunning, high-performing sales page. Best investment we've made."</p>
-      <cite>— Emma Lawson, E-commerce Brand Owner</cite>
+      <p>“Best investment we’ve made this year. Revenue doubled in the first month. The design and copy are world-class.”</p>
+      <cite>— Sarah Chen, E-commerce Brand Owner</cite>
+    </div>
+    <div class="testimonial">
+      <p>“Professional, fast, and results-driven. They over-delivered on every promise. Highly recommend for anyone serious about scaling.”</p>
+      <cite>— Marcus Johnson, Digital Course Creator</cite>
     </div>
   </section>
 
   <h2 class="section-title container">Frequently Asked Questions</h2>
   <section class="faq container">
     <div class="faq-item">
-      <h4>How long does it take to build a sales page?</h4>
-      <p>Typical timeline is 3-5 weeks, depending on package and feedback speed.</p>
+      <h4>How long does it take to complete a sales page?</h4>
+      <p>Typically 7–14 days from start to final delivery, depending on the package and feedback speed.</p>
     </div>
     <div class="faq-item">
-      <h4>Do you offer flexible payment options?</h4>
-      <p>Yes — 50% deposit upfront, with the balance upon final delivery.</p>
+      <h4>Do you provide revisions?</h4>
+      <p>Yes — all packages include at least 1 round of revisions. Higher tiers include unlimited revisions until you're 100% satisfied.</p>
     </div>
     <div class="faq-item">
-      <h4>What if the results don't meet expectations?</h4>
-      <p>We provide unlimited revisions on higher packages and a full satisfaction guarantee.</p>
+      <h4>Can I see the page before paying in full?</h4>
+      <p>Absolutely. We work with a 50% deposit upfront and the remaining balance only after you approve the final design.</p>
+    </div>
+    <div class="faq-item">
+      <h4>Do you offer ongoing optimization or support?</h4>
+      <p>Yes, we offer monthly optimization retainers for A/B testing, updates, and continuous improvement.</p>
+    </div>
+    <div class="faq-item">
+      <h4>Will the page be optimized for mobile and speed?</h4>
+      <p>Every page we build scores 95+ on Google PageSpeed and is fully responsive across all devices.</p>
     </div>
   </section>
 
-  <section class="final-cta">
+  <section class="final-cta" style="padding: 200px 0; text-align: center; background: rgba(0,0,0,0.3);">
     <div class="container">
-      <h2>Ready to Transform Your Traffic Into Predictable Revenue?</h2>
-      <p>Limited client spots available — book a free strategy call today.</p>
-      <a href="https://calendly.com/swatirajput868443/30min" class="cta-btn">Book Your Free Strategy Call Now</a>
+      <h2 style="font-size: 4.5rem; margin-bottom: 40px;">Ready to 5X Your Conversions?</h2>
+      <p style="font-size: 1.8rem; color: var(--text-secondary); margin-bottom: 80px;">Limited spots available — book your free strategy call before they're gone.</p>
+      <a href="https://calendly.com/your-link" class="cta-btn">Book Free Strategy Call Now</a>
     </div>
   </section>
 </body>
