@@ -89,6 +89,13 @@
     .faq-item:hover { box-shadow: var(--glow); transform: translateY(-8px); }
     .faq-item h4 { font-size: 1.8rem; margin-bottom: 25px; color: var(--accent); }
     .faq-item p { font-size: 1.2rem; color: var(--text-secondary); }
+    .final-cta { padding: 200px 0; text-align: center; background: rgba(0,0,0,0.3); }
+    .final-cta h2 { font-size: 5rem; margin-bottom: 40px; }
+    .final-cta .subtext { font-size: 1.8rem; color: var(--text-secondary); margin-bottom: 60px; max-width: 900px; margin-left: auto; margin-right: auto; }
+    .final-cta .cta-btn { padding: 32px 120px; font-size: 2rem; }
+    .contact-options { margin-top: 60px; font-size: 1.4rem; color: var(--text-secondary); }
+    .contact-options a { color: var(--accent); text-decoration: none; margin: 0 20px; }
+    .contact-options a:hover { text-decoration: underline; }
     .cta-btn { padding: 30px 100px; font-size: 1.8rem; font-weight: 800; background: var(--accent); color: #000; border-radius: 80px; text-decoration: none; box-shadow: var(--glow); transition: all 0.6s; display: inline-block; }
     .cta-btn:hover { transform: scale(1.1); box-shadow: 0 0 100px rgba(0,255,234,0.9); }
     @media (max-width: 1024px) {
@@ -104,6 +111,7 @@
       .device-img { max-width: 100%; }
       .hero-ctas { flex-direction: column; }
       .pricing-card.popular { transform: none; }
+      .final-cta h2 { font-size: 4rem; }
     }
   </style>
 </head>
@@ -289,8 +297,6 @@
       <p class="no-hidden">No hidden fees. Full transparency.</p>
     </div>
   </section>
-
-  <!-- Updated Testimonials Section -->
   <h2 class="section-title container">What Our Clients Say</h2>
   <section class="testimonials container">
     <div class="testimonial">
@@ -306,7 +312,6 @@
       <cite>— David Kim, CEO @ Nexus Digital</cite>
     </div>
   </section>
-
   <h2 class="section-title container">Frequently Asked Questions</h2>
   <section class="faq container">
     <div class="faq-item">
@@ -330,11 +335,18 @@
       <p>Every page we build scores 95+ on Google PageSpeed and is fully responsive across all devices.</p>
     </div>
   </section>
-  <section class="final-cta" style="padding: 200px 0; text-align: center; background: rgba(0,0,0,0.3);">
+
+  <!-- Enhanced Final CTA Section -->
+  <section class="final-cta">
     <div class="container">
-      <h2 style="font-size: 4.5rem; margin-bottom: 40px;">Ready to 5X Your Conversions?</h2>
-      <p style="font-size: 1.8rem; color: var(--text-secondary); margin-bottom: 80px;">Limited spots available — book your free strategy call before they're gone.</p>
-      <a href="https://calendly.com/your-link" class="cta-btn">Book Free Strategy Call Now</a>
+      <h2>Claim Your 3-7x Revenue Growth Now</h2>
+      <p class="subtext">Spots are strictly limited — serious brands only. Book your free strategy call today and lock in explosive, predictable revenue.</p>
+      <a href="https://calendly.com/your-link" class="cta-btn">Book Your Free Strategy Call Now</a>
+      <div class="contact-options">
+        Or reach out directly: 
+        <a href="mailto:hello@youragency.com">hello@youragency.com</a> • 
+        <a href="tel:+1234567890">+1 (234) 567-890</a>
+      </div>
     </div>
   </section>
 </body>
