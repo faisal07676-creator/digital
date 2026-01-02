@@ -49,15 +49,21 @@
     .step:hover { box-shadow: var(--glow); }
     .step-icon { width: 110px; height: 110px; background: var(--accent-soft); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 36px; font-size: 3rem; color: var(--accent); box-shadow: var(--glow); }
     .pricing { display: flex; justify-content: center; gap: 60px; flex-wrap: wrap; margin: 160px 0; }
-    .price-card { background: var(--card-bg); padding: 70px 50px; border-radius: 36px; text-align: center; flex: 1; min-width: 360px; border: 1px solid var(--border); transition: all 0.5s; backdrop-filter: blur(16px); }
+    .price-card { background: var(--card-bg); padding: 70px 50px; border-radius: 36px; text-align: center; flex: 1; min-width: 360px; border: 1px solid var(--border); transition: all 0.5s; backdrop-filter: blur(16px); position: relative; }
     .price-card:hover { transform: translateY(-20px); box-shadow: var(--glow); }
     .price-card.pro { border: 3px solid var(--accent); box-shadow: var(--glow); background: linear-gradient(135deg, rgba(35,35,60,0.9), rgba(30,30,50,0.9)); }
     .price-card .tag { background: var(--accent); color: #000; padding: 12px 40px; border-radius: 50px; font-weight: 700; margin-bottom: 40px; display: inline-block; }
-    .price { font-size: 4.8rem; font-weight: 800; color: var(--accent); margin: 40px 0; }
+    .price { font-size: 4.8rem; font-weight: 800; color: var(--accent); margin: 40px 0 20px; }
+    .price-subtitle { font-size: 1.2rem; color: var(--text-secondary); margin-bottom: 40px; }
     .features-list { list-style: none; margin: 40px 0; text-align: left; }
     .features-list li { margin-bottom: 18px; font-size: 1.1rem; }
     .features-list i { color: var(--accent); margin-right: 12px; }
-    .guarantee { margin-top: 40px; font-size: 1rem; color: var(--text-secondary); font-style: italic; }
+    .highlight-text { margin: 40px 0; font-size: 1.1rem; color: var(--text-secondary); }
+    .post-pricing-cta { text-align: center; padding: 120px 0 180px; background: rgba(0,0,0,0.2); }
+    .post-pricing-cta h2 { font-size: 3.8rem; margin-bottom: 32px; }
+    .post-pricing-cta p { font-size: 1.6rem; color: var(--text-secondary); margin-bottom: 70px; }
+    .cta-btn { padding: 26px 90px; font-size: 1.6rem; font-weight: 700; background: var(--accent); color: #000; border-radius: 70px; text-decoration: none; box-shadow: var(--glow); transition: all 0.5s; display: inline-block; }
+    .cta-btn:hover { transform: scale(1.08); box-shadow: 0 0 70px rgba(0,230,216,0.8); }
     .testimonials { display: grid; grid-template-columns: repeat(auto-fit, minmax(460px, 1fr)); gap: 60px; margin: 160px 0; }
     .testimonial { background: var(--card-bg); padding: 60px; border-radius: 32px; backdrop-filter: blur(14px); border-left: 6px solid var(--accent); box-shadow: var(--glow); }
     .testimonial p { font-size: 1.3rem; margin-bottom: 30px; font-style: italic; }
@@ -68,8 +74,6 @@
     .final-cta { text-align: center; padding: 180px 0; }
     .final-cta h2 { font-size: 3.8rem; margin-bottom: 32px; }
     .final-cta p { font-size: 1.6rem; color: var(--text-secondary); margin-bottom: 70px; }
-    .cta-btn { padding: 26px 90px; font-size: 1.6rem; font-weight: 700; background: var(--accent); color: #000; border-radius: 70px; text-decoration: none; box-shadow: var(--glow); transition: all 0.5s; display: inline-block; }
-    .cta-btn:hover { transform: scale(1.08); box-shadow: 0 0 70px rgba(0,230,216,0.8); }
     @media (max-width: 992px) {
       .hero h1 { font-size: 4rem; }
       .section-title { font-size: 2.8rem; }
@@ -97,7 +101,6 @@
       </div>
     </div>
   </section>
-
   <h2 class="section-title container">Average Pages Lose Visitors — Elite Pages Convert Them Into Customers</h2>
   <section class="transformation container">
     <div class="trans-box bad">
@@ -109,7 +112,6 @@
       <p>Strategic copywriting, psychological triggers, lightning-fast performance, and proven frameworks — driving predictable revenue growth.</p>
     </div>
   </section>
-
   <h2 class="section-title container">Engineered for Maximum Performance & Conversions</h2>
   <section class="features container">
     <div class="feature">
@@ -128,7 +130,6 @@
       <p>Every element backed by decades of research and real-world testing for maximum persuasion.</p>
     </div>
   </section>
-
   <h2 class="section-title container">Our Battle-Tested Process</h2>
   <section class="process container">
     <div class="step">
@@ -151,40 +152,59 @@
   <h2 class="section-title container">Transparent Investment Packages</h2>
   <section class="pricing container">
     <div class="price-card">
-      <h3>Essential</h3>
-      <div class="price">$1,997</div>
+      <h3>🟦 Starter — $300</h3>
+      <p class="price-subtitle">Best for validation & early launches</p>
       <ul class="features-list">
-        <li><i class="fas fa-check"></i> Custom single-page design</li>
-        <li><i class="fas fa-check"></i> Full mobile & tablet optimization</li>
-        <li><i class="fas fa-check"></i> Conversion-optimized layout</li>
-        <li><i class="fas fa-check"></i> 3 revision rounds</li>
+        <li><i class="fas fa-check"></i> 1 High-Converting Sales Page</li>
+        <li><i class="fas fa-check"></i> Clean & professional layout</li>
+        <li><i class="fas fa-check"></i> Mobile-responsive design</li>
+        <li><i class="fas fa-check"></i> Clear call-to-action structure</li>
+        <li><i class="fas fa-check"></i> Fast loading performance</li>
       </ul>
-      <div class="guarantee">100% Satisfaction Guarantee</div>
+      <p class="highlight-text">👉 Perfect if you want a solid page that looks professional and converts.</p>
     </div>
+
     <div class="price-card pro">
       <div class="tag">Most Popular</div>
-      <h3>Professional</h3>
-      <div class="price">$4,997</div>
+      <h3>⭐ Pro — $500</h3>
+      <p class="price-subtitle">Built for serious growth</p>
       <ul class="features-list">
-        <li><i class="fas fa-check"></i> Everything in Essential</li>
-        <li><i class="fas fa-check"></i> Professional persuasive copywriting</li>
-        <li><i class="fas fa-check"></i> Social proof & trust elements</li>
-        <li><i class="fas fa-check"></i> A/B testing setup & analytics</li>
-        <li><i class="fas fa-check"></i> Unlimited revisions</li>
+        <li><i class="fas fa-check"></i> Everything in Starter</li>
+        <li><i class="fas fa-check"></i> Conversion-focused UI/UX</li>
+        <li><i class="fas fa-check"></i> Proven sales copy structure</li>
+        <li><i class="fas fa-check"></i> Optimized section flow</li>
+        <li><i class="fas fa-check"></i> GitHub clean code delivery</li>
+        <li><i class="fas fa-check"></i> 1 round of revisions</li>
       </ul>
-      <div class="guarantee">Results-or-Revision Guarantee</div>
+      <p class="highlight-text">👉 Ideal for digital products, SaaS & course creators.</p>
     </div>
+
     <div class="price-card">
-      <h3>Enterprise</h3>
-      <div class="price">$9,997+</div>
+      <h3>👑 Premium — $1000</h3>
+      <p class="price-subtitle">For high-ticket & scalable offers</p>
       <ul class="features-list">
-        <li><i class="fas fa-check"></i> Everything in Professional</li>
-        <li><i class="fas fa-check"></i> Complete sales funnel strategy</li>
-        <li><i class="fas fa-check"></i> Custom animations & illustrations</li>
-        <li><i class="fas fa-check"></i> 90-day optimization support</li>
-        <li><i class="fas fa-check"></i> Priority dedicated manager</li>
+        <li><i class="fas fa-check"></i> Everything in Pro</li>
+        <li><i class="fas fa-check"></i> Advanced conversion strategy</li>
+        <li><i class="fas fa-check"></i> Custom sections & layout</li>
+        <li><i class="fas fa-check"></i> Multiple CTA placements</li>
+        <li><i class="fas fa-check"></i> Priority delivery</li>
+        <li><i class="fas fa-check"></i> Dedicated support</li>
       </ul>
-      <div class="guarantee">Performance-Based Guarantee</div>
+      <p class="highlight-text">👉 Designed for brands that want maximum conversions.</p>
+    </div>
+  </section>
+
+  <section class="post-pricing-cta">
+    <div class="container">
+      <p style="font-size: 1.4rem; margin-bottom: 30px;"><strong>🔒 No Hidden Costs</strong></p>
+      <p style="font-size: 1.2rem; color: var(--text-secondary); margin-bottom: 50px;">
+        One-time payment<br>
+        100% custom design<br>
+        Built specifically for the US market
+      </p>
+      <h2>Ready to Build a Sales Page That Actually Converts?</h2>
+      <p>Let’s turn your traffic into revenue.</p>
+      <a href="https://calendly.com/swatirajput868443/30min" class="cta-btn">👉 Contact Now</a>
     </div>
   </section>
 
