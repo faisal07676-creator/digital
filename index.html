@@ -63,6 +63,11 @@
     .feature:hover { box-shadow: var(--glow); transform: translateY(-12px); }
     .feature-icon { font-size: 4.2rem; color: var(--accent); margin-bottom: 40px; text-shadow: var(--glow); }
     .feature-img { max-width: 100%; border-radius: 20px; margin-top: 40px; box-shadow: 0 20px 40px rgba(0,0,0,0.5); }
+    .process { display: grid; grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)); gap: 70px; margin: 160px 0; }
+    .process-step { text-align: center; padding: 60px 50px; background: var(--card-bg); border-radius: 36px; backdrop-filter: blur(18px); border: 1px solid var(--border); transition: all 0.5s; position: relative; }
+    .process-step:hover { box-shadow: var(--glow); transform: translateY(-12px); }
+    .step-number { font-size: 6rem; font-weight: 900; color: var(--accent); opacity: 0.2; position: absolute; top: -20px; left: 20px; }
+    .process-icon { font-size: 4.2rem; color: var(--accent); margin-bottom: 40px; text-shadow: var(--glow); }
     .testimonials { display: grid; grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); gap: 80px; margin: 180px 0; }
     .testimonial { background: var(--card-bg); padding: 70px; border-radius: 40px; backdrop-filter: blur(18px); border-left: 8px solid var(--accent); box-shadow: var(--glow); transition: all 0.4s; }
     .testimonial:hover { transform: translateY(-10px); }
@@ -132,14 +137,13 @@
       <p>Psychological mastery, lightning performance, irresistible offers — turning traffic into unstoppable revenue growth.</p>
     </div>
   </section>
-
   <h2 class="section-title container">Elite Sales Pages Designed for Maximum Conversions</h2>
   <div class="solution-section container">
     <p>We solve your conversion problem by building ultra-premium, data-driven sales pages from the ground up — engineered with proven conversion frameworks that turn cold traffic into high-paying customers.</p>
     <p>Every page leverages deep US buyer psychology principles like scarcity, social proof, authority, and reciprocity to guide visitors effortlessly toward the buy button — eliminating hesitation and maximizing desire.</p>
     <p>We prioritize crystal-clear messaging, unbreakable trust signals (testimonials, guarantees, badges), urgency triggers, and laser-focused CTAs that make saying "yes" feel inevitable.</p>
     <p>The result? Pages that don't just look stunning — they perform like conversion machines, delivering 3-7x higher results consistently.</p>
-    
+   
     <div class="solution-visuals">
       <img src="https://saaslandingpage.com/wp-content/uploads/2023/08/3-neon-dark-landing-page-template@2x.png" alt="High-conversion dark mode landing page example" class="solution-img" loading="lazy">
       <img src="https://static.wingify.com/gcp/uploads/2021/05/7.png" alt="A/B test before-after conversion improvement" class="solution-img" loading="lazy">
@@ -147,7 +151,6 @@
       <img src="https://cdn.rajivgopinath.com/blogs/67c5e0650d2b42628e3547b7-1741021285864.jpg" alt="Psychology principles in sales design infographic" class="solution-img" loading="lazy">
     </div>
   </div>
-
   <h2 class="section-title container">Unmatched Features & Benefits That Drive Explosive Results</h2>
   <section class="features container">
     <div class="feature">
@@ -187,19 +190,40 @@
       <img src="https://cdn.myportfolio.com/242158de-a9dd-43e9-b0a0-80633fb5dbdf/94c2a7f8-4d2f-458e-855c-493821199571_rw_1920.png?h=bbbd09984fe44845125f6cbb100edf21" alt="Easy-to-scan feature cards with icons example" class="feature-img" loading="lazy">
     </div>
   </section>
-
+  <!-- New Process Section Added Here -->
+  <h2 class="section-title container">Our Simple 3-Step Process</h2>
+  <section class="process container">
+    <div class="process-step">
+      <span class="step-number">1</span>
+      <div class="process-icon"><i class="fas fa-search"></i></div>
+      <h3>Discovery & Strategy Call</h3>
+      <p>We hop on a free strategy call to understand your brand, goals, audience, and offer. We map out the perfect conversion strategy tailored just for you — no guesswork, just data-driven planning.</p>
+    </div>
+    <div class="process-step">
+      <span class="step-number">2</span>
+      <div class="process-icon"><i class="fas fa-paint-brush"></i></div>
+      <h3>Design, Build & Refine</h3>
+      <p>Our experts craft your elite sales page with stunning design, persuasive copy, and conversion optimization. You review and give feedback — we revise until it's perfect.</p>
+    </div>
+    <div class="process-step">
+      <span class="step-number">3</span>
+      <div class="process-icon"><i class="fas fa-rocket"></i></div>
+      <h3>Launch & Explode Revenue</h3>
+      <p>We deliver the fully optimized page in clean WordPress format. You launch, drive traffic, and watch conversions skyrocket — with ongoing support if needed.</p>
+    </div>
+  </section>
   <h2 class="section-title container">What Our Clients Say</h2>
   <section class="testimonials container">
     <div class="testimonial">
-      <p>“We went from 1.8% to 8.4% conversion rate in just 3 weeks after launch. The new page is absolutely crushing it!”</p>
+      <p>"We went from 1.8% to 8.4% conversion rate in just 3 weeks after launch. The new page is absolutely crushing it!"</p>
       <cite>— Alex Rivera, Founder @ TechFlow SaaS</cite>
     </div>
     <div class="testimonial">
-      <p>“Best investment we’ve made this year. Revenue doubled in the first month. The design and copy are world-class.”</p>
+      <p>"Best investment we've made this year. Revenue doubled in the first month. The design and copy are world-class."</p>
       <cite>— Sarah Chen, E-commerce Brand Owner</cite>
     </div>
     <div class="testimonial">
-      <p>“Professional, fast, and results-driven. They over-delivered on every promise. Highly recommend for anyone serious about scaling.”</p>
+      <p>"Professional, fast, and results-driven. They over-delivered on every promise. Highly recommend for anyone serious about scaling."</p>
       <cite>— Marcus Johnson, Digital Course Creator</cite>
     </div>
   </section>
@@ -218,20 +242,4 @@
       <p>Absolutely. We work with a 50% deposit upfront and the remaining balance only after you approve the final design.</p>
     </div>
     <div class="faq-item">
-      <h4>Do you offer ongoing optimization or support?</h4>
-      <p>Yes, we offer monthly optimization retainers for A/B testing, updates, and continuous improvement.</p>
-    </div>
-    <div class="faq-item">
-      <h4>Will the page be optimized for mobile and speed?</h4>
-      <p>Every page we build scores 95+ on Google PageSpeed and is fully responsive across all devices.</p>
-    </div>
-  </section>
-  <section class="final-cta" style="padding: 200px 0; text-align: center; background: rgba(0,0,0,0.3);">
-    <div class="container">
-      <h2 style="font-size: 4.5rem; margin-bottom: 40px;">Ready to 5X Your Conversions?</h2>
-      <p style="font-size: 1.8rem; color: var(--text-secondary); margin-bottom: 80px;">Limited spots available — book your free strategy call before they're gone.</p>
-      <a href="https://calendly.com/your-link" class="cta-btn">Book Free Strategy Call Now</a>
-    </div>
-  </section>
-</body>
-</html>
+      <h4>Do you offer ongoing
