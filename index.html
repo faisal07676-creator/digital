@@ -44,12 +44,16 @@
     .trust-signals { margin-top: 40px; }
     .trust-signals p { font-size: 1.2rem; color: var(--text-secondary); margin-bottom: 20px; }
     .trust-badges { display: flex; justify-content: center; gap: 60px; flex-wrap: wrap; opacity: 0.8; }
-    .section-title { text-align: center; font-size: 3.8rem; font-weight: 800; margin: 180px 0 100px; letter-spacing: -1px; }
+    .section-title { text-align: center; font-size: 3.8rem; font-weight: 800; margin: 180px 0 100px; letter-spacing: -1px; background: linear-gradient(90deg, #fff, var(--accent)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .problem-intro { text-align: center; max-width: 900px; margin: 0 auto 80px; }
+    .problem-intro p { font-size: 1.6rem; color: var(--text-secondary); margin-bottom: 40px; }
+    .leak-img { max-width: 600px; margin: 60px auto; border-radius: 30px; box-shadow: var(--glow); }
     .transformation { display: grid; grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); gap: 80px; margin-bottom: 180px; }
-    .trans-box { background: var(--card-bg); padding: 70px; border-radius: 40px; text-align: center; backdrop-filter: blur(20px); border: 1px solid var(--border); transition: all 0.5s; }
+    .trans-box { background: var(--card-bg); padding: 70px; border-radius: 40px; text-align: center; backdrop-filter: blur(20px); border: 1px solid var(--border); transition: all 0.5s; position: relative; overflow: hidden; }
     .trans-box.bad { border-color: rgba(255, 50, 50, 0.4); }
     .trans-box.good { border-width: 4px; border-color: var(--accent); box-shadow: var(--glow); }
     .trans-box:hover { transform: translateY(-15px); box-shadow: var(--glow); }
+    .trans-img { max-width: 100%; border-radius: 20px; margin-bottom: 40px; box-shadow: 0 20px 40px rgba(0,0,0,0.5); }
     .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)); gap: 70px; margin: 160px 0; }
     .feature { text-align: center; padding: 60px 50px; background: var(--card-bg); border-radius: 36px; backdrop-filter: blur(18px); border: 1px solid var(--border); transition: all 0.5s; }
     .feature:hover { box-shadow: var(--glow); transform: translateY(-12px); }
@@ -93,7 +97,7 @@
       <div class="devices">
         <img src="https://saaslandingpage.com/wp-content/uploads/2023/08/4-cube-dark-landing-page-template@2x.png" alt="High-Conversion Dark Mode Sales Page Mockup 1" class="device-img" loading="lazy">
         <img src="https://saaslandingpage.com/wp-content/uploads/2023/08/3-neon-dark-landing-page-template@2x.png" alt="High-Conversion Dark Mode Sales Page Mockup 2" class="device-img" loading="lazy">
-        <img src="https://y4pdgnepgswqffpt.public.blob.vercel-storage.com/templates/51028/dark-x-xJwqwzP5mHQbCgVOeFR61Cc1FHh1yi" alt="Premium Dark Mode SaaS Landing Page Mockup" class="device-img" loading="lazy">
+        <img src="https://saaslandingpage.com/wp-content/uploads/2023/08/12-lumin-dark-landing-page-template@2x.png" alt="Premium Dark Mode SaaS Landing Page Mockup" class="device-img" loading="lazy">
       </div>
       <div class="trust-signals">
         <p>Trusted by top brands • Featured on leading platforms • 100% satisfaction guarantee</p>
@@ -106,15 +110,23 @@
     </div>
   </section>
 
-  <h2 class="section-title container">Why Most Pages Fail — And How Elite Ones Dominate</h2>
+  <h2 class="section-title container">You're Burning Thousands in Ad Spend Every Month...<br>And Getting Almost Nothing Back</h2>
+  <div class="problem-intro container">
+    <p>You're driving tons of expensive traffic to your page... but visitors leave without buying. That means every dollar you spend on ads is leaking away — pure waste.</p>
+    <p>Weak pages confuse people, load slowly, and build zero trust. Result? Low conversions and lost revenue.</p>
+    <img src="https://www.hireawriter.us/hubfs/6-May-11-2024-02-11-03-0673-AM.png" alt="Money leaking from ad spend funnel - wasted budget illustration" class="leak-img" loading="lazy">
+  </div>
+
   <section class="transformation container">
     <div class="trans-box bad">
-      <h3>Average Landing Page</h3>
-      <p>Confusing layout, weak copy, slow speed, zero trust — bleeding ad spend and killing conversions.</p>
+      <h3>The Average Failing Page</h3>
+      <img src="https://pageflows.com/resources/wp-content/uploads/2024/10/Cluttered-UI-Design.png" alt="Cluttered, ugly low-conversion landing page example" class="trans-img" loading="lazy">
+      <p>Confusing layout, weak copy, slow speed, zero trust — bleeding your ad spend and killing conversions.</p>
     </div>
     <div class="trans-box good">
-      <h3>Elite Conversion Machine</h3>
-      <p>Psychological mastery, lightning performance, irresistible offers — creating unstoppable revenue growth.</p>
+      <h3>The Elite Conversion Machine</h3>
+      <img src="https://saaslandingpage.com/wp-content/uploads/2023/08/3-neon-dark-landing-page-template@2x.png" alt="Clean, modern high-conversion dark mode landing page example" class="trans-img" loading="lazy">
+      <p>Psychological mastery, lightning performance, irresistible offers — turning traffic into unstoppable revenue growth.</p>
     </div>
   </section>
 
