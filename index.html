@@ -1,222 +1,361 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>High-Converting Sales Pages | USA Market</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Premium Sales Page Design Agency</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <style>
+    :root {
+      --bg-dark: #0f0f1a;
+      --bg-gradient: linear-gradient(135deg, #0f0f1a 0%, #1a1a2e 50%, #16213e 100%);
+      --text-primary: #ffffff;
+      --text-secondary: #b0b0cc;
+      --accent-neon: #00ffea;
+      --accent-glow: 0 0 20px rgba(0, 255, 234, 0.4);
+      --card-bg: #161625;
+      --border-glow: #00ffea;
+    }
 
-<style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{
-  font-family: 'Segoe UI', Arial, sans-serif;
-  background:#0b1220;
-  color:#fff;
-  line-height:1.6;
-}
-img{max-width:100%;border-radius:16px}
-.container{
-  max-width:1200px;
-  margin:auto;
-  padding:80px 20px;
-}
-a{text-decoration:none}
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-.btn{
-  padding:14px 32px;
-  border-radius:30px;
-  font-weight:600;
-  display:inline-block;
-}
-.primary{background:#38bdf8;color:#000}
-.secondary{border:1px solid #38bdf8;color:#38bdf8}
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      background: var(--bg-gradient);
+      color: var(--text-primary);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
 
-.hero{
-  background:radial-gradient(circle at top,#1e293b,#020617);
-}
-.hero-grid{
-  display:grid;
-  grid-template-columns:1.2fr 1fr;
-  gap:50px;
-  align-items:center;
-}
-.hero h1{
-  font-size:48px;
-  line-height:1.2;
-}
-.hero p{
-  margin:20px 0;
-  opacity:.85;
-  font-size:18px;
-}
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
 
-.section-dark{background:#020617}
-.center{text-align:center}
+    /* Hero Section */
+    .hero {
+      padding: 120px 0 100px;
+      text-align: center;
+      position: relative;
+    }
 
-.features{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:25px;
-  margin-top:50px;
-}
-.card{
-  background:#0b1220;
-  padding:30px;
-  border-radius:18px;
-}
+    .hero h1 {
+      font-size: 4.5rem;
+      font-weight: 800;
+      line-height: 1.1;
+      margin-bottom: 24px;
+      background: linear-gradient(90deg, #ffffff, #00ffea);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
 
-.visual-section{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:50px;
-  align-items:center;
-}
+    .hero p {
+      font-size: 1.4rem;
+      color: var(--text-secondary);
+      max-width: 800px;
+      margin: 0 auto 40px;
+    }
 
-.price-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:30px;
-  margin-top:50px;
-}
-.price-card{
-  background:#0b1220;
-  padding:40px 30px;
-  border-radius:20px;
-}
-.price-card.highlight{
-  border:2px solid #38bdf8;
-}
-.price{
-  font-size:40px;
-  color:#38bdf8;
-  margin:15px 0;
-}
+    .devices {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      margin-top: 80px;
+      flex-wrap: wrap;
+    }
 
-.cta{
-  background:linear-gradient(135deg,#020617,#0b1220);
-  padding:100px 20px;
-  text-align:center;
-}
+    .device-img {
+      width: 600px;
+      border-radius: 16px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+      border: 1px solid rgba(0, 255, 234, 0.2);
+    }
 
-footer{
-  text-align:center;
-  padding:25px;
-  font-size:14px;
-  opacity:.6;
-  background:#020617;
-}
+    .mobile-img {
+      width: 280px;
+    }
 
-@media(max-width:900px){
-  .hero-grid,.visual-section{grid-template-columns:1fr}
-  .hero h1{font-size:36px}
-}
-</style>
+    /* Section Title */
+    .section-title {
+      text-align: center;
+      font-size: 3rem;
+      font-weight: 700;
+      margin: 120px 0 80px;
+      background: linear-gradient(90deg, #ffffff, #00ffea);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* Transformation Section */
+    .transformation {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+      margin-bottom: 120px;
+    }
+
+    .trans-box {
+      background: var(--card-bg);
+      padding: 40px;
+      border-radius: 16px;
+      text-align: center;
+      border: 1px solid rgba(0, 255, 234, 0.1);
+    }
+
+    .trans-box.bad {
+      border-color: #ff4444;
+      box-shadow: 0 0 30px rgba(255, 68, 68, 0.2);
+    }
+
+    .trans-box.good {
+      border-color: var(--border-glow);
+      box-shadow: var(--accent-glow);
+    }
+
+    .trans-box h3 {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+    }
+
+    /* Process Section */
+    .process {
+      display: flex;
+      justify-content: center;
+      gap: 60px;
+      flex-wrap: wrap;
+      margin: 100px 0;
+    }
+
+    .step {
+      flex: 1;
+      min-width: 280px;
+      text-align: center;
+      padding: 40px 20px;
+      background: var(--card-bg);
+      border-radius: 16px;
+      position: relative;
+      transition: transform 0.3s;
+    }
+
+    .step:hover {
+      transform: translateY(-10px);
+    }
+
+    .step-icon {
+      width: 80px;
+      height: 80px;
+      background: rgba(0, 255, 234, 0.1);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 30px;
+      font-size: 2rem;
+      color: var(--accent-neon);
+      box-shadow: var(--accent-glow);
+    }
+
+    .step h3 {
+      font-size: 1.6rem;
+      margin-bottom: 16px;
+    }
+
+    /* Pricing Section */
+    .pricing {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+      margin: 100px 0;
+    }
+
+    .price-card {
+      background: var(--card-bg);
+      padding: 50px 40px;
+      border-radius: 20px;
+      text-align: center;
+      flex: 1;
+      min-width: 300px;
+      border: 2px solid rgba(0, 255, 234, 0.1);
+      transition: all 0.4s;
+    }
+
+    .price-card:hover {
+      transform: translateY(-15px);
+      border-color: var(--accent-neon);
+      box-shadow: var(--accent-glow);
+    }
+
+    .price-card.pro {
+      border-color: var(--accent-neon);
+      box-shadow: var(--accent-glow);
+      transform: scale(1.08);
+      z-index: 2;
+      background: linear-gradient(135deg, #161625, #1e1e33);
+    }
+
+    .price-card .tag {
+      display: inline-block;
+      background: var(--accent-neon);
+      color: #000;
+      padding: 6px 16px;
+      border-radius: 30px;
+      font-size: 0.9rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .price-card h3 {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+    }
+
+    .price {
+      font-size: 4rem;
+      font-weight: 800;
+      margin: 20px 0;
+      color: var(--accent-neon);
+    }
+
+    /* CTA Section */
+    .final-cta {
+      text-align: center;
+      padding: 120px 0;
+      background: linear-gradient(180deg, transparent, #0f0f1a);
+    }
+
+    .final-cta h2 {
+      font-size: 3.5rem;
+      margin-bottom: 24px;
+    }
+
+    .final-cta p {
+      font-size: 1.6rem;
+      color: var(--text-secondary);
+      margin-bottom: 50px;
+    }
+
+    .cta-btn {
+      display: inline-block;
+      padding: 20px 60px;
+      font-size: 1.4rem;
+      font-weight: bold;
+      background: var(--accent-neon);
+      color: #000;
+      border-radius: 50px;
+      text-decoration: none;
+      box-shadow: 0 0 40px rgba(0, 255, 234, 0.6);
+      transition: all 0.3s;
+    }
+
+    .cta-btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 60px rgba(0, 255, 234, 0.8);
+    }
+
+    /* Responsive */
+    @media (max-width: 1024px) {
+      .hero h1 { font-size: 3.8rem; }
+      .transformation { grid-template-columns: 1fr; }
+      .devices { gap: 20px; }
+      .device-img { width: 500px; }
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 3rem; }
+      .section-title { font-size: 2.4rem; }
+      .devices { flex-direction: column; }
+      .device-img { width: 100%; max-width: 500px; }
+      .mobile-img { width: 240px; }
+      .pricing { flex-direction: column; align-items: center; }
+      .price-card.pro { transform: scale(1.05); }
+    }
+  </style>
 </head>
-
 <body>
 
-<!-- HERO -->
-<section class="hero">
-  <div class="container hero-grid">
-    <div>
-      <h1>Sales Pages That Convert<br>Visitors Into Customers</h1>
-      <p>
-        We design visually stunning, conversion-focused sales pages for
-        digital products & SaaS — built for the US market.
-      </p>
-      <a href="#pricing" class="btn primary">Get Started</a>
-      <a href="#work" class="btn secondary">See How It Works</a>
-    </div>
-
-    <img src="https://images.unsplash.com/photo-1558655146-d09347e92766?q=80&w=900"
-         alt="Sales Page Mockup">
-  </div>
-</section>
-
-<!-- PROBLEM -->
-<section class="section-dark">
-  <div class="container center">
-    <h2>Your Page Looks Okay.<br>But It’s Not Selling.</h2>
-    <p>
-      Traffic without conversions is wasted money.
-      Your sales page must guide, convince and convert.
-    </p>
-  </div>
-</section>
-
-<!-- SOLUTION VISUAL -->
-<section id="work">
-  <div class="container visual-section">
-    <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?q=80&w=900"
-         alt="Landing Page Design">
-
-    <div>
-      <h2>Designed for Conversions</h2>
-      <p>
-        Every section is structured using proven US buyer psychology —
-        clarity, trust and strong calls-to-action.
-      </p>
-
-      <div class="features">
-        <div class="card">🎯 Conversion-Focused Layout</div>
-        <div class="card">⚡ Fast & Lightweight</div>
-        <div class="card">📱 Mobile-First Design</div>
-        <div class="card">🧠 Sales Copy Structure</div>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1>Your Page Looks Okay.<br>But It’s Not Selling.</h1>
+      <p>We design high-converting sales pages that turn your traffic into real revenue using proven US buyer psychology.</p>
+      
+      <div class="devices">
+        <img src="https://images.unsplash.com/photo-1607705703571-c5a8695f18f6?w=1200&q=80" alt="Desktop Mockup" class="device-img">
+        <img src="https://images.unsplash.com/photo-1512941675423-d609f84ee1c1?w=600&q=80" alt="Mobile Mockup" class="device-img mobile-img">
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- PROCESS -->
-<section class="section-dark">
-  <div class="container center">
-    <h2>Simple 3-Step Process</h2>
-    <div class="features">
-      <div class="card">1️⃣ Share Your Product & Goal</div>
-      <div class="card">2️⃣ We Design & Optimize</div>
-      <div class="card">3️⃣ You Launch & Start Selling</div>
+  <!-- Transformation Section -->
+  <h2 class="section-title">Designed for Conversions</h2>
+  <section class="transformation container">
+    <div class="trans-box bad">
+      <h3>Wasted Traffic</h3>
+      <p>Confusing layout, weak copy, no clear CTA — visitors leave without buying.</p>
     </div>
-  </div>
-</section>
-
-<!-- PRICING -->
-<section id="pricing">
-  <div class="container center">
-    <h2>Transparent Pricing</h2>
-
-    <div class="price-grid">
-      <div class="price-card">
-        <h3>Starter</h3>
-        <div class="price">$149</div>
-        <p>Perfect for validation</p>
-      </div>
-
-      <div class="price-card highlight">
-        <h3>Pro</h3>
-        <div class="price">$299</div>
-        <p>Best for scaling products</p>
-      </div>
-
-      <div class="price-card">
-        <h3>Premium</h3>
-        <div class="price">$499</div>
-        <p>High-ticket conversion build</p>
-      </div>
+    <div class="trans-box good">
+      <h3>Revenue Machine</h3>
+      <p>Clear messaging, strong hierarchy, trust signals — visitors convert into customers.</p>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- CTA -->
-<section class="cta">
-  <h2>Ready to Build a Sales Page<br>That Actually Converts?</h2>
-  <p>Let’s turn your traffic into revenue.</p><br>
-  <a href="mailto:growthviadigital@proton.me" class="btn primary">
-    Contact Now
-  </a>
-</section>
+  <!-- Process Section -->
+  <h2 class="section-title">Simple 3-Step Process</h2>
+  <section class="process container">
+    <div class="step">
+      <div class="step-icon"><i class="fas fa-comment-dots"></i></div>
+      <h3>Step 1: Share Your Goal</h3>
+      <p>Tell us about your product, audience, and revenue targets.</p>
+    </div>
+    <div class="step">
+      <div class="step-icon"><i class="fas fa-paint-brush"></i></div>
+      <h3>Step 2: We Design & Optimize</h3>
+      <p>We craft a conversion-focused page with proven structure.</p>
+    </div>
+    <div class="step">
+      <div class="step-icon"><i class="fas fa-rocket"></i></div>
+      <h3>Step 3: Launch & Sell</h3>
+      <p>Go live and watch your traffic turn into real sales.</p>
+    </div>
+  </section>
 
-<footer>
-  © 2026 Growth Via Digital — Premium Sales Page Design
-</footer>
+  <!-- Pricing Section -->
+  <h2 class="section-title">Choose Your Package</h2>
+  <section class="pricing container">
+    <div class="price-card">
+      <h3>Starter</h3>
+      <div class="price">$300</div>
+      <p>Perfect for simple products</p>
+    </div>
+    <div class="price-card pro">
+      <div class="tag">Best Value</div>
+      <h3>Pro</h3>
+      <div class="price">$500</div>
+      <p>Most popular — full optimization</p>
+    </div>
+    <div class="price-card">
+      <h3>Premium</h3>
+      <div class="price">$1000</div>
+      <p>Advanced features + A/B testing</p>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="final-cta">
+    <div class="container">
+      <h2>Ready to Build a Sales Page That Actually Converts?</h2>
+      <p>Let’s turn your traffic into revenue.</p>
+      <a href="#contact" class="cta-btn">Contact Now</a>
+    </div>
+  </section>
 
 </body>
 </html>
