@@ -102,20 +102,78 @@
     .footer .copyright { font-size: 1rem; color: var(--text-secondary); opacity: 0.7; }
     .cta-btn { padding: 30px 100px; font-size: 1.8rem; font-weight: 800; background: var(--accent); color: #000; border-radius: 80px; text-decoration: none; box-shadow: var(--glow); transition: all 0.6s; display: inline-block; }
     .cta-btn:hover { transform: scale(1.1); box-shadow: 0 0 100px rgba(0,255,234,0.9); }
+    
+    @media (max-width: 1200px) {
+      .container { padding: 0 30px; }
+      .hero h1 { font-size: 4.8rem; }
+      .section-title { font-size: 3.5rem; }
+      .devices { gap: 50px; }
+      .device-img { max-width: 500px; }
+    }
     @media (max-width: 1024px) {
-      .hero h1 { font-size: 4.5rem; }
-      .devices { gap: 60px; }
-      .device-img { max-width: 550px; }
+      .hero h1 { font-size: 4.2rem; }
+      .hero .subhead { font-size: 1.6rem; }
+      .devices { gap: 40px; }
+      .device-img { max-width: 450px; }
+      .transformation { gap: 60px; }
+      .trans-box { padding: 50px; }
+      .features, .process, .pricing, .testimonials { gap: 50px; }
+      .feature, .process-step, .pricing-card, .testimonial { padding: 50px 40px; }
+    }
+    @media (max-width: 868px) {
+      .hero { padding: 80px 0 60px; }
+      .hero h1 { font-size: 3.8rem; letter-spacing: -1px; }
+      .hero .subhead { font-size: 1.5rem; }
+      .cta-btn-primary { padding: 20px 60px; font-size: 1.4rem; }
+      .cta-btn-secondary { padding: 18px 50px; font-size: 1.3rem; }
+      .section-title { font-size: 3.2rem; margin: 120px 0 80px; }
+      .problem-intro p { font-size: 1.4rem; }
+      .solution-section p { font-size: 1.4rem; }
+      .leak-img, .solution-img { max-width: 100%; }
+      .trans-box { padding: 40px; }
+      .feature, .process-step, .pricing-card, .testimonial, .faq-item { padding: 40px 30px; }
+      .price { font-size: 4rem; }
+      .final-cta { padding: 150px 0; }
+      .final-cta h2 { font-size: 3.8rem; }
+      .final-cta .subtext { font-size: 1.6rem; }
+      .final-cta .cta-btn { padding: 28px 100px; font-size: 1.8rem; }
     }
     @media (max-width: 768px) {
       .hero { padding: 100px 0 80px; }
-      .hero h1 { font-size: 3.5rem; }
-      .hero .subhead { font-size: 1.5rem; }
-      .section-title { font-size: 3rem; }
+      .hero h1 { font-size: 3.2rem; }
+      .hero .subhead { font-size: 1.4rem; }
+      .section-title { font-size: 2.8rem; margin: 100px 0 60px; }
       .device-img { max-width: 100%; }
-      .hero-ctas { flex-direction: column; }
+      .hero-ctas { flex-direction: column; gap: 20px; }
+      .hero-ctas a { width: 100%; text-align: center; }
       .pricing-card.popular { transform: none; }
-      .final-cta h2 { font-size: 4rem; }
+      .pricing-card { padding: 50px 30px; }
+      .popular-badge { padding: 8px 30px; font-size: 1.1rem; }
+      .final-cta h2 { font-size: 3.5rem; }
+      .trust-badges { gap: 30px; }
+      .trust-badges img { max-height: 50px; }
+      .step-number { font-size: 5rem; }
+    }
+    @media (max-width: 480px) {
+      .container { padding: 0 20px; }
+      .hero { padding: 80px 0 60px; }
+      .hero h1 { font-size: 2.8rem; letter-spacing: -0.5px; }
+      .hero .subhead { font-size: 1.3rem; }
+      .cta-btn-primary, .cta-btn { padding: 18px 50px; font-size: 1.3rem; }
+      .section-title { font-size: 2.5rem; margin: 80px 0 50px; }
+      .problem-intro p, .solution-section p { font-size: 1.3rem; }
+      .trans-box, .feature, .process-step, .pricing-card, .testimonial, .faq-item { padding: 30px 20px; }
+      .price { font-size: 3.5rem; }
+      .price span { font-size: 1.8rem; }
+      .testimonial p { font-size: 1.3rem; }
+      .faq-item h4 { font-size: 1.6rem; }
+      .final-cta { padding: 120px 0; }
+      .final-cta h2 { font-size: 3rem; }
+      .final-cta .subtext { font-size: 1.4rem; }
+      .final-cta .cta-btn { padding: 24px 80px; font-size: 1.6rem; }
+      .footer { padding: 60px 0; }
+      .devices { gap: 30px; }
+      .solution-visuals { gap: 40px; }
     }
   </style>
 </head>
@@ -167,7 +225,7 @@
     <p>Every page leverages deep US buyer psychology principles like scarcity, social proof, authority, and reciprocity to guide visitors effortlessly toward the buy button — eliminating hesitation and maximizing desire.</p>
     <p>We prioritize crystal-clear messaging, unbreakable trust signals (testimonials, guarantees, badges), urgency triggers, and laser-focused CTAs that make saying "yes" feel inevitable.</p>
     <p>The result? Pages that don't just look stunning — they perform like conversion machines, delivering 3-7x higher results consistently.</p>
-    
+   
     <div class="solution-visuals">
       <img src="https://saaslandingpage.com/wp-content/uploads/2023/08/3-neon-dark-landing-page-template@2x.png" alt="High-conversion dark mode landing page example" class="solution-img" loading="lazy">
       <img src="https://static.wingify.com/gcp/uploads/2021/05/7.png" alt="A/B test before-after conversion improvement" class="solution-img" loading="lazy">
@@ -351,7 +409,6 @@
       </div>
     </div>
   </section>
-
   <!-- New Minimal Footer -->
   <footer class="footer">
     <div class="container">
